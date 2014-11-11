@@ -11,7 +11,7 @@ configure do
   %x"rake db:create"
   puts "Run migrations..."
   %x"rake db:migrate"
-  puts "Run app..."
+  puts "Run app...."
 
   while !self.connect_to_database
     puts "Connecting to database...\n"
